@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Registration Form</p>
+        </div>
+        <form id="form" class="form">
+            <div id="formcontrol" class="form-control">
+                <label for="username">First name</label>
+                <input type="text" id="username" />
+                <small>Error message</small>
+            </div>
+            <div id="formcontrol" class="form-control">
+                <label for="username2">Last name</label>
+                <input type="text" id="username2" />
+                <small>Error message</small>
+            </div>
+            <div id="formcontrol" class="form-control">
+                <label for="birthday">Birthday</label>
+                <input class="birthday" type="date" id="birthday" />
+                <small>Error message</small>
+            </div>
+            <div id="formcontrol" class="form-control">
+                    <span id="gender" class="gender-title">Gender</span>
+                    <div id="category" class="category">
+                        <label for="">
+                            <input id="rd1" class="radio" type="radio" value="male" name="option">
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="">
+                            <input id="rd2" class="radio2" type="radio" value="Female" name="option">
+                            <span class="gender2">Female</span>
+                        </label>    
+                      </div>
+                <small>Error message</small>
+            </div>
+            <div id="formcontrol" class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+                <small>Error message</small>
+            </div>
+            <div id="formcontrol" class="form-control">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" id="phonenumber" />
+                <small>Error message</small>
+            </div>
+
+            <button class="btn" type="submit" id="submitbutton">Submit</button>
+            <div class="popup" id="popup">
+                <img src="404-tick.png">
+                <h2>Thank You!</h2>
+                <p>Successfully submitted.</p>
+                <button type="botton">OK</button>
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
